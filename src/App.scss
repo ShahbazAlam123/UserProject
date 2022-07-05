@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+    .idtag{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+        button{
+            font-size: small;
+            font-weight: bold;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            color: rgb(18, 233, 18);
+        background-color: white;
+        & :hover{
+            cursor: pointer;
+            color: rgb(15, 167, 15);
+            background-color: white;
+        }
+    }
+        
+    }
+    .addBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(18, 233, 18);
+        background-color: white;
+        width: 160px;
+        &:hover{
+            cursor: pointer;
+            color: rgb(12, 145, 12);
+            background-color: whitesmoke;
+        }
+    }
+    .searchbtn button{
+        color: rgb(18, 233, 18);
+        background-color: white;
+    }
+    input{
+        text-align: center;
+        padding: 8px 2px 0px 2px;        
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+}
+
+.container{
+     margin: 6px auto;
+    z-index: 1;
+    background-color: rgb(56, 59, 61);
+    color: white;
+    width: 90%;
+    height: 30vh;
+    border: 20px solid rgb(18, 19, 18);
+    opacity: 0.8;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(3, 29, 46);
+    }
+    .main{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        .photo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .form{
+            height: 100px;
+        }
+      }
+      .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 10px;
+        .status{
+           margin-left: 40px;
+        }
+         .green{
+        color: green;
+        width: 50px;
+    }
+        .red{
+            color: red;
+            width: 50px;
+        }
+        
+        .editbtn button{
+            width: 50px;
+            color: green;
+            cursor: pointer;
+          
+        }
+    }
+        button :hover{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            width: 30px;
+        }
+      }
+
+      .modalwrapper {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      .modal {
+        min-width: 400px;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 10px 8px 10px rgb(92, 24, 24);
+        background: linear-gradient(to right, rgb(248, 227, 227), grey);
+        .form{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            width: 80%;
+            .btns {
+                display: flex;
+                justify-content: space-between;
+                button{
+                    padding: 2px 4px;
+                    cursor: pointer;
+
+                }
+            }
+        }
+      }
+    }
+    // .submit{
+    //     visibility: hidden;
+    // }
+    .pagebtn{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px auto;
+        button{
+            width: 90px;
+            height: 30px;
+            padding: 3px;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            background-color: green;
+            &:hover{
+                color: green;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+       
+    }
+
+    .Poppup{
+        position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+    .wrapper{
+        border: 10px solid rgb(161, 146, 5);
+    
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 7rem auto;
+        background-color: rgb(75, 3, 3);
+        color: white;
+       
+        .button{
+            width: 24px;
+            height: 27px;
+            background-color: white;
+            color: green;
+            font-size: large;
+            font-weight: bold;
+            padding: 4px 4px;
+            &:hover{
+                color: white;
+                background-color: green;
+                cursor: pointer;
+            }
+        }
+        .mainmodal{
+            width: 100%;
+            height: 40vh;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            div{
+                margin-left: 10px;
+            }
+         }
+    }
+    .popbtn{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
